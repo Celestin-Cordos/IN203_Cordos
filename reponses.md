@@ -9,6 +9,7 @@
 La probabilité d'avoir un blocage est de 1/2
 
 ##Question du cours 2
+
 La loi d'Amdhal est la suivante:
 S(n) = n/(1+(n-1) * f) avec f la fraction en temps du code non parallélisable. 
 Ici, f = 1-0.9 = 0.1. Donc, en faisant tendre n vers l'infini, on a
@@ -26,5 +27,6 @@ On prend n = 2n et on a S_s = 0.25 + 2 * 3.75 = 7.75
 
 
 ##Ensemble de Mandelbroot
+
 1. Le temps d'execution est en moyenne de 30 (pour 8 processus) en utilisant le calcul parallele et de 21s pour un calcul sequentiel. En revanche, dans le cas parallele peut augmenter lorsqu'on diminue les processus pour depasser les 100 secondes dans le cas de 5 processus. 
 On peut alors penser que le temps gagné a diviser les taches est peut etre perdu par l'echange d'informations entre les processus.
